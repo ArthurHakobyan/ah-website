@@ -19,7 +19,7 @@ const HomePage = () => {
 
   return (
     <>
-      <section className="md:flex container mx-auto px-8 py-32">
+      <section className="md:flex container mx-auto px-8 md:py-32 pt-32">
         <div className="flex flex-1 align-center justify-center">
           <div className="my-auto relative md:pl-16">
             <div className="absolute bottom-0 left-0 ">

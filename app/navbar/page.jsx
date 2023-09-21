@@ -4,8 +4,8 @@ import NavLogo from "../components/logo/NavLogo";
 
 const Navbar = () => {
   return (
-    <div className="py-8 container mx-auto px-8">
-     <div className="flex justify-between">
+    <div className="bg-dark-blue py-8 px-8 sticky top-0 left-0 right-0 z-10 border-b border-azure">
+     <div className="flex justify-between container mx-auto">
       <NavLogo />
       <div className="text-cream font-semibold">
       <ul className="flex gap-8">
