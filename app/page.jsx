@@ -22,7 +22,7 @@ const HomePage = () => {
       <section className="md:flex container mx-auto px-8 md:py-32 pt-32">
         <div className="flex flex-1 align-center justify-center">
           <div className="my-auto relative md:pl-16">
-            <div className="absolute bottom-0 left-0 ">
+            <div className="md:absolute bottom-0 left-0 md:block hidden">
               <Image
                 src="/images/graphics/home-vectors/Vector 187.png"
                 alt="vector image"

@@ -1,9 +1,35 @@
-import React from "react";
+'use client'
+import React, { useRef } from "react";
 import Image from "next/image";
 import Button from "../components/button/Button";
 import { BUTTON_TYPES } from "../data/button";
+import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
+  const form = useRef();
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_s6c2c5r",
+        "template_y2jkr6k",
+        form.current,
+        "AKoOKTmmVSHpPyE7u"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+      e.target.reset();
+  };
+
   return (
     <section className="md:flex md:gap-4 container mx-auto px-8 py-32">
       <div className="flex-1 flex flex-col justify-center">
@@ -22,7 +48,7 @@ const ContactPage = () => {
         </div>
       </div>
       <div className="flex-1">
-        <form className="w-full max-w-lg">
+        <form className="w-full max-w-lg" ref={form} onSubmit={sendEmail}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
@@ -35,7 +61,7 @@ const ContactPage = () => {
                 className="appearance-none block w-full bg-gray text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
-                
+                name="user_name" 
               />
             </div>
             <div className="w-full md:w-1/2 px-3">
@@ -49,7 +75,7 @@ const ContactPage = () => {
                 className="appearance-none block w-full bg-gray text-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
                 type="text"
-              
+                name="user_lastname"
               />
             </div>
           </div>
@@ -65,6 +91,7 @@ const ContactPage = () => {
                 className="appearance-none block w-full bg-gray text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
                 type="email"
+                name="user_email" 
               />
             </div>
           </div>
@@ -79,6 +106,7 @@ const ContactPage = () => {
               <textarea
                 className=" no-resize appearance-none block w-full bg-gray text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                 id="message"
+                name="message"
               ></textarea>
             </div>
           </div>
