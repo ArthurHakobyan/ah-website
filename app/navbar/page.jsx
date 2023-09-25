@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-dark-blue py-8 px-8 sticky top-0 left-0 right-0 z-10">
+    <div className="bg-dark-blue py-8 px-8 md:px-20 sticky top-0 left-0 right-0 z-10">
       <div className="flex justify-between container mx-auto">
         <NavLogo />
-        <div className=" text-cream font-semibold">
+        <div className=" text-cream font-semibold ">
           <ul className="hidden md:flex gap-8">
             <li>
               <Link href="/">

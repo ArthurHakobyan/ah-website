@@ -15,7 +15,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'my-works-bg': "url('/images/graphics/my-recent-works/doodle items.png')",
+        'works-bg': "url('/images/graphics/my-recent-works/doodle items.png')",
       }
     },
   },

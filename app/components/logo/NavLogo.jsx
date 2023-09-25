@@ -1,5 +1,6 @@
 import React from "react";
 import { Oswald } from "next/font/google";
+import Link from "next/link";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -9,9 +10,11 @@ const oswald = Oswald({
 const NavLogo = () => {
   return (
     <div>
-      <div className={`text-cream font-[700] ${oswald.className}`}>
-        ArturHakobyan
-      </div>
+      <Link href="/">
+        <div className={`text-azure font-[700] ${oswald.className}`}>
+          ArturHakobyan
+        </div>
+      </Link>
     </div>
   );
 };
