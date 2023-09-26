@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import heroimage from '/static/graphics/about-me-vectors/Group 2351.png'
 
 const AboutPage = () => {
   return (
@@ -51,7 +52,7 @@ const AboutPage = () => {
         </div>
         <div className="flex justify-center flex-1 md:shrink-0">
           <Image
-            src="/imgs/graphics/about-me-vectors/Group 2351.png "
+            src={heroimage}
             alt="vector image"
             width={450}
             height={450}
