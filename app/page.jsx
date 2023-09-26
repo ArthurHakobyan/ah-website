@@ -24,7 +24,7 @@ const HomePage = () => {
           <div className="my-auto relative md:pl-16">
             <div className="md:absolute bottom-0 left-0 md:block hidden">
               <Image
-                src="/imgs/graphics/home-vectors/Vector 187.png"
+                src="/static/graphics/home-vectors/Vector 187.png"
                 alt="vector image"
                 width={60}
                 height={50}
@@ -74,7 +74,7 @@ const HomePage = () => {
         </div>
         <div className="flex md:shrink-0 flex-1 align-center justify-center ">
           <Image
-            src="/imgs/graphics/home-vectors/Group 2347.png "
+            src="/static/graphics/home-vectors/Group 2347.png "
             alt="vector image"
             width={450}
             height={450}

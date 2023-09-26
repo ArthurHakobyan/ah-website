@@ -9,7 +9,7 @@ const AboutPage = () => {
         <div className="flex-1 text-cream pt-16 pb-16 relative">
           <div className="absolute top-0 left-0">
             <Image
-              src="/imgs/graphics/about-me-vectors/Vector 141.png "
+              src="/static/graphics/about-me-vectors/Vector 141.png "
               alt="vector image"
               width={63}
               height={48}
@@ -17,7 +17,7 @@ const AboutPage = () => {
           </div>
           <div className="absolute top-5 left-80">
             <Image
-              src="/imgs/graphics/about-me-vectors/lightbulb.png "
+              src="/static/graphics/about-me-vectors/lightbulb.png "
               alt="vector image"
               width={75}
               height={90}
@@ -25,7 +25,7 @@ const AboutPage = () => {
           </div>
           <div className="absolute bottom-0 right-0">
             <Image
-              src="/imgs/graphics/about-me-vectors/Vector 186.png "
+              src="/static/graphics/about-me-vectors/Vector 186.png "
               alt="vector image"
               width={130}
               height={130}
