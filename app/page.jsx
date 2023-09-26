@@ -9,17 +9,14 @@ import ContactPage from "./contact/page";
 import { BUTTON_TYPES } from "./data/button";
 import { saveAs } from "file-saver";
 import Link from "next/link";
-import heroimage from 'public/static/graphics/home-vectors/Group 2347.png'
-import herovector from 'public/static/graphics/home-vectors/Vector 187.png'
-
-
-
+import heroimage from "public/static/graphics/home-vectors/Group 2347.png";
+import herovector from "public/static/graphics/home-vectors/Vector 187.png";
 
 const HomePage = () => {
   const handleDownloadCv = () => {
-    const cvUrl = "/download-files/Artur-Hakobyan-CV.pdf";
+    const cvUrl = "/download-files/AH-Front-End-CV.pdf";
 
-    saveAs(cvUrl, "Artur-Hakobyan-CV.pdf");
+    saveAs(cvUrl, "AH-Front-End-CV.pdf");
   };
 
   return (
@@ -78,12 +75,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="flex md:shrink-0 flex-1 align-center justify-center ">
-          <Image
-            src={heroimage}
-            alt="vector image"
-            width={450}
-            height={450}
-          />
+          <Image src={heroimage} alt="vector image" width={450} height={450} />
         </div>
       </section>
       <AboutPage />
