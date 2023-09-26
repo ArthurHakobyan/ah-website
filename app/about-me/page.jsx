@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import heroimage from '/static/graphics/about-me-vectors/Group 2351.png'
+import heroimage from 'public/static/graphics/about-me-vectors/Group 2351.png'
 
 const AboutPage = () => {
   return (
