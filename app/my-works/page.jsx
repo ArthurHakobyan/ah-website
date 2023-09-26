@@ -18,7 +18,7 @@ const MyWorksPage = () => {
           <div className="flex justify-center items-center bg-gray bg-opacity-70 p-8 my-4 rounded-xl">
             <Link href="/currently-working">
               <Image
-                src="/images/graphics/my-recent-works/Course Website Landing Page Thumbnail 1.png "
+                src="/imgs/graphics/my-recent-works/Course Website Landing Page Thumbnail 1.png "
                 alt="vector image"
                 width={200}
                 height={200}
@@ -28,7 +28,7 @@ const MyWorksPage = () => {
           <div className="flex justify-center items-center bg-gray bg-opacity-70 p-8 my-4 rounded-xl">
             <Link href="/currently-working">
               <Image
-                src="/images/graphics/my-recent-works/Group 1.png "
+                src="/imgs/graphics/my-recent-works/Group 1.png "
                 alt="vector image"
                 width={200}
                 height={200}
@@ -38,7 +38,7 @@ const MyWorksPage = () => {
           <div className="flex justify-center items-center bg-gray bg-opacity-70 p-8 my-4 rounded-xl">
             <Link href="/currently-working">
               <Image
-                src="/images/graphics/my-recent-works/Group 2.png "
+                src="/imgs/graphics/my-recent-works/Group 2.png "
                 alt="vector image"
                 width={200}
                 height={200}

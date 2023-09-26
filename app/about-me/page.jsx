@@ -9,7 +9,7 @@ const AboutPage = () => {
         <div className="flex-1 text-cream pt-16 pb-16 relative">
           <div className="absolute top-0 left-0">
             <Image
-              src="/images/graphics/about-me-vectors/Vector 141.png "
+              src="/imgs/graphics/about-me-vectors/Vector 141.png "
               alt="vector image"
               width={63}
               height={48}
@@ -17,7 +17,7 @@ const AboutPage = () => {
           </div>
           <div className="absolute top-5 left-80">
             <Image
-              src="/images/graphics/about-me-vectors/lightbulb.png "
+              src="/imgs/graphics/about-me-vectors/lightbulb.png "
               alt="vector image"
               width={75}
               height={90}
@@ -25,7 +25,7 @@ const AboutPage = () => {
           </div>
           <div className="absolute bottom-0 right-0">
             <Image
-              src="/images/graphics/about-me-vectors/Vector 186.png "
+              src="/imgs/graphics/about-me-vectors/Vector 186.png "
               alt="vector image"
               width={130}
               height={130}
@@ -51,7 +51,7 @@ const AboutPage = () => {
         </div>
         <div className="flex justify-center flex-1 md:shrink-0">
           <Image
-            src="/images/graphics/about-me-vectors/Group 2351.png "
+            src="/imgs/graphics/about-me-vectors/Group 2351.png "
             alt="vector image"
             width={450}
             height={450}

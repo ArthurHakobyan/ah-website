@@ -12,7 +12,7 @@ const Footer = () => {
             className="md:px-4 px-2 flex items-center justify-center gap-2"
           >
             <Image
-              src="/images/graphics/footer/home.png "
+              src="/imgs/graphics/footer/home.png "
               alt="vector image"
               width={23}
               height={23}
@@ -24,7 +24,7 @@ const Footer = () => {
             className="md:px-4 px-2 flex items-center justify-center gap-2"
           >
             <Image
-              src="/images/graphics/footer/phone.png "
+              src="/imgs/graphics/footer/phone.png "
               alt="vector image"
               width={23}
               height={23}
@@ -36,7 +36,7 @@ const Footer = () => {
             className="md:px-4 px-2 flex items-center justify-center gap-2"
           >
             <Image
-              src="/images/graphics/footer/user.png "
+              src="/imgs/graphics/footer/user.png "
               alt="vector image"
               width={23}
               height={23}

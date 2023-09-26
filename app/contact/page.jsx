@@ -40,7 +40,7 @@ const ContactPage = () => {
         </div>
         <div>
           <Image
-            src="/images/graphics/contact-vectors/Group 2373.png "
+            src="/imgs/graphics/contact-vectors/Group 2373.png "
             alt="vector image"
             width={450}
             height={450}
