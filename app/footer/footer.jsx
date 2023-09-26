@@ -1,6 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import footericon1 from 'public/static/graphics/footer/home.png'
+import footericon2 from 'public/static/graphics/footer/phone.png'
+import footericon3 from 'public/static/graphics/footer/user.png'
+
+
 
 const Footer = () => {
   return (
@@ -12,7 +17,7 @@ const Footer = () => {
             className="md:px-4 px-2 flex items-center justify-center gap-2"
           >
             <Image
-              src="/static/graphics/footer/home.png "
+              src={footericon1}
               alt="vector image"
               width={23}
               height={23}
@@ -24,7 +29,7 @@ const Footer = () => {
             className="md:px-4 px-2 flex items-center justify-center gap-2"
           >
             <Image
-              src="/static/graphics/footer/phone.png "
+              src={footericon2}
               alt="vector image"
               width={23}
               height={23}
@@ -36,7 +41,7 @@ const Footer = () => {
             className="md:px-4 px-2 flex items-center justify-center gap-2"
           >
             <Image
-              src="/static/graphics/footer/user.png "
+              src={footericon3}
               alt="vector image"
               width={23}
               height={23}

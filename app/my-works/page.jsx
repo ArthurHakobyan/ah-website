@@ -3,6 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import myworks1 from 'public/static/graphics/my-recent-works/Course Website Landing Page Thumbnail 1.png'
+import myworks2 from 'public/static/graphics/my-recent-works/Group 1.png'
+import myworks3 from 'public/static/graphics/my-recent-works/Group 2.png'
+
+
+
 
 const MyWorksPage = () => {
   return (
@@ -18,7 +24,7 @@ const MyWorksPage = () => {
           <div className="flex justify-center items-center bg-gray bg-opacity-70 p-8 my-4 rounded-xl">
             <Link href="/currently-working">
               <Image
-                src="/static/graphics/my-recent-works/Course Website Landing Page Thumbnail 1.png "
+                src={myworks1}
                 alt="vector image"
                 width={200}
                 height={200}
@@ -28,7 +34,7 @@ const MyWorksPage = () => {
           <div className="flex justify-center items-center bg-gray bg-opacity-70 p-8 my-4 rounded-xl">
             <Link href="/currently-working">
               <Image
-                src="/static/graphics/my-recent-works/Group 1.png "
+                src={myworks2}
                 alt="vector image"
                 width={200}
                 height={200}
@@ -38,7 +44,7 @@ const MyWorksPage = () => {
           <div className="flex justify-center items-center bg-gray bg-opacity-70 p-8 my-4 rounded-xl">
             <Link href="/currently-working">
               <Image
-                src="/static/graphics/my-recent-works/Group 2.png "
+                src={myworks3}
                 alt="vector image"
                 width={200}
                 height={200}

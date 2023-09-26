@@ -1,13 +1,15 @@
-'use client'
-import React, { useRef } from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Button from "../components/button/Button";
 import { BUTTON_TYPES } from "../data/button";
 import emailjs from "@emailjs/browser";
+import contactimage from "public/static/graphics/contact-vectors/Group 2373.png";
 
 const ContactPage = () => {
   const form = useRef();
-  
+  const [isMessageSent, setMessageSent] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,7 +29,13 @@ const ContactPage = () => {
         }
       );
 
-      e.target.reset();
+    e.target.reset();
+
+    setMessageSent(true);
+
+    setTimeout(() => {
+      setMessageSent(false);
+    }, 7000);
   };
 
   return (
@@ -40,7 +48,7 @@ const ContactPage = () => {
         </div>
         <div>
           <Image
-            src="/static/graphics/contact-vectors/Group 2373.png "
+            src={contactimage}
             alt="vector image"
             width={450}
             height={450}
@@ -61,7 +69,7 @@ const ContactPage = () => {
                 className="appearance-none block w-full bg-gray text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
-                name="user_name" 
+                name="user_name"
               />
             </div>
             <div className="w-full md:w-1/2 px-3">
@@ -91,7 +99,7 @@ const ContactPage = () => {
                 className="appearance-none block w-full bg-gray text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
                 type="email"
-                name="user_email" 
+                name="user_email"
               />
             </div>
           </div>
@@ -146,6 +154,12 @@ const ContactPage = () => {
             <div className="md:w-2/3"></div>
           </div>
         </form>
+        {isMessageSent && (
+          <div className="text-azure font-[700] py-6">
+            Message Sent Successfully!<br></br> Thank you for contacting me; this means a
+            lot to me.
+          </div>
+        )}
       </div>
     </section>
   );

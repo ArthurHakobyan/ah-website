@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import heroimage from 'public/static/graphics/about-me-vectors/Group 2351.png'
+import aboutmeimage from 'public/static/graphics/about-me-vectors/Group 2351.png'
+import aboutimg1 from 'public/static/graphics/about-me-vectors/Vector 141.png'
+import aboutimg2 from 'public/static/graphics/about-me-vectors/lightbulb.png'
+import aboutimg3 from 'public/static/graphics/about-me-vectors/Vector 186.png'
+
 
 const AboutPage = () => {
   return (
@@ -10,7 +14,7 @@ const AboutPage = () => {
         <div className="flex-1 text-cream pt-16 pb-16 relative">
           <div className="absolute top-0 left-0">
             <Image
-              src="/static/graphics/about-me-vectors/Vector 141.png "
+              src={aboutimg1}
               alt="vector image"
               width={63}
               height={48}
@@ -18,7 +22,7 @@ const AboutPage = () => {
           </div>
           <div className="absolute top-5 left-80">
             <Image
-              src="/static/graphics/about-me-vectors/lightbulb.png "
+              src={aboutimg2}
               alt="vector image"
               width={75}
               height={90}
@@ -26,7 +30,7 @@ const AboutPage = () => {
           </div>
           <div className="absolute bottom-0 right-0">
             <Image
-              src="/static/graphics/about-me-vectors/Vector 186.png "
+              src={aboutimg3}
               alt="vector image"
               width={130}
               height={130}
@@ -52,7 +56,7 @@ const AboutPage = () => {
         </div>
         <div className="flex justify-center flex-1 md:shrink-0">
           <Image
-            src={heroimage}
+            src={aboutmeimage}
             alt="vector image"
             width={450}
             height={450}

@@ -9,6 +9,11 @@ import ContactPage from "./contact/page";
 import { BUTTON_TYPES } from "./data/button";
 import { saveAs } from "file-saver";
 import Link from "next/link";
+import heroimage from 'public/static/graphics/home-vectors/Group 2347.png'
+import herovector from 'public/static/graphics/home-vectors/Vector 187.png'
+
+
+
 
 const HomePage = () => {
   const handleDownloadCv = () => {
@@ -24,7 +29,7 @@ const HomePage = () => {
           <div className="my-auto relative md:pl-16">
             <div className="md:absolute bottom-0 left-0 md:block hidden">
               <Image
-                src="/static/graphics/home-vectors/Vector 187.png"
+                src={herovector}
                 alt="vector image"
                 width={60}
                 height={50}
@@ -74,7 +79,7 @@ const HomePage = () => {
         </div>
         <div className="flex md:shrink-0 flex-1 align-center justify-center ">
           <Image
-            src="/static/graphics/home-vectors/Group 2347.png "
+            src={heroimage}
             alt="vector image"
             width={450}
             height={450}
