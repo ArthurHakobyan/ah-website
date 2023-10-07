@@ -156,8 +156,8 @@ const ContactPage = () => {
         </form>
         {isMessageSent && (
           <div className="text-azure font-[700] py-6">
-            Message Sent Successfully!<br></br> Thank you for contacting me; this means a
-            lot to me.
+            Message Sent Successfully!<br></br> Thank you for contacting me;
+            this means a lot to me.
           </div>
         )}
       </div>
