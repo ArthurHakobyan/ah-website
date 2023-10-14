@@ -9,9 +9,15 @@ import contactimage from "public/static/graphics/contact-vectors/Group 2373.png"
 const ContactPage = () => {
   const form = useRef();
   const [isMessageSent, setMessageSent] = useState(false);
+  const [email, setEmail] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (email.trim() === "") {
+      alert("E-mail field cannot be empty!");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -35,7 +41,7 @@ const ContactPage = () => {
 
     setTimeout(() => {
       setMessageSent(false);
-    }, 7000);
+    }, 5000);
   };
 
   return (
@@ -100,6 +106,8 @@ const ContactPage = () => {
                 id="email"
                 type="email"
                 name="user_email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </div>

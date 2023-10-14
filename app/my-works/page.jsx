@@ -22,7 +22,9 @@ const MyWorksPage = () => {
               href="https://barber-pokladna-system.vercel.app/"
               target="_blank"
             >
-            <h1 className="text-cream uppercase font-bold">Barber Pokladní Systém</h1>
+              <h1 className="text-cream uppercase font-bold">
+                Barber Pokladní Systém
+              </h1>
               <p className="text-cream">this is desctop version only</p>
               <Image
                 src={myworks1}
