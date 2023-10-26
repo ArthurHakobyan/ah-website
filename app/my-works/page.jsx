@@ -19,13 +19,9 @@ const MyWorksPage = () => {
         <div className="flex flex-col md:flex-row gap-5 md:w-full justify-center items-stretch w-80 mx-auto">
           <div className="flex justify-center items-center bg-gray bg-opacity-70 p-8 my-4 rounded-xl">
             <Link
-              href="https://barber-pokladna-system.vercel.app/"
-              target="_blank"
+              href="/currently-working"
             >
-              <h1 className="text-cream uppercase font-bold">
-                Barber Pokladní Systém
-              </h1>
-              <p className="text-cream">this is desctop version only</p>
+              
               <Image
                 src={myworks1}
                 alt="vector image"

@@ -33,11 +33,7 @@ const Navbar = () => {
                 <p>My Works</p>
               </Link>
             </li>
-            <li>
-              <Link href="https://nextjs-portfolio-eight-gray.vercel.app/" target="_blank">
-                <p>My Blog</p>
-              </Link>
-            </li>
+
             <li>
               <Link href="/contact">
                 <p>Contact Me</p>
@@ -70,11 +66,7 @@ const Navbar = () => {
                   <p>My Works</p>
                 </Link>
               </li>
-              <li className="p-4 border-b border-azure" onClick={handleNav}>
-              <Link href="https://nextjs-portfolio-eight-gray.vercel.app/" target="_blank">
-                <p>My Blog</p>
-              </Link>
-            </li>
+
               <li className="p-4 border-b border-azure" onClick={handleNav}>
                 <Link href="/contact">
                   <p>Contact Me</p>
