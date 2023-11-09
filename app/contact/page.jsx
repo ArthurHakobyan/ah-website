@@ -13,6 +13,7 @@ const ContactPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
     if (email.trim() === "") {
       alert("E-mail field cannot be empty!");
@@ -20,12 +21,7 @@ const ContactPage = () => {
     }
 
     emailjs
-      .sendForm(
-        "service_s6c2c5r",
-        "template_y2jkr6k",
-        form.current,
-        "AKoOKTmmVSHpPyE7u"
-      )
+      .sendForm("service_s6c2c5r", "template_y2jkr6k", form.current, apiKey)
       .then(
         (result) => {
           console.log(result.text);
